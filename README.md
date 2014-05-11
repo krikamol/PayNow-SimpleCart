@@ -68,6 +68,7 @@ If you view source for index.html you will notice all the key Sage Pay Now field
 
 Demo Site
 ---------
+
 The simpleCart(js) demo site will show you Sage Pay Now in action:
 http://simplecart.gatewaymodules.com
 
@@ -81,6 +82,7 @@ Tested with simpleCart(js) version 3
 
 Feedback, issues & feature requests
 -----------------------------------
-We always welcome your feedback.
+
+We welcome your feedback.
 If you have any comments or questions please contact Sage Pay South Africa or log an issue on GitHub
 
