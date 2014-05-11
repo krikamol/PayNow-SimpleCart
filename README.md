@@ -50,9 +50,9 @@ A. Sage Pay Now Gateway Server Configuration Steps:
 7. Click "Allow credit card payments:"
 
 8. The Accept URL should be:
-	http://your_demo_website_simplecart_folder/accept.html
+	> http://your_demo_website_simplecart_folder/accept.html
 9. The Decline URL should be:
-	http://your_demo_website_simplecart_folder/decline.html
+	> http://your_demo_website_simplecart_folder/decline.html
 
 10. It is highly recommended that you "Make test mode active:" while you are still testing your site.
 
