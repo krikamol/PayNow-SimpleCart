@@ -66,6 +66,9 @@ If you view source for index.html you will notice all the key Sage Pay Now field
 *p3 - Description of goods
 *p4 - Amount
 
+The official technical documentation for simpleCart(js) can be found here:
+https://github.com/wojodesign/simplecart-js
+
 Demo Site
 ---------
 
