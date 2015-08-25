@@ -6,16 +6,22 @@
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/simpleCart.js"></script>
         <script type="text/javascript">
+
+            var customerName = "",
+                orderID = "",
+                customerID = "",
+                sageGUID = "5907ed0e-0ad6-43b4-9cbb-59910520413c";
+
             simpleCart({
-                checkout: { 
-                    type: "SendForm" , 
+                checkout: {
+                    type: "SendForm" ,
                     url: "https://paynow.sagepay.co.za/site/paynow.aspx" ,
 
-                    // HTTP method for form, "POST" 
-                    method: "POST" , 
+                    // HTTP method for form, "POST"
+                    method: "POST" ,
 
                     // URL to redirect browser to after successful checkout
-                    success: "http://simplecart.gatewaymodules.com/success.html" , 
+                    success: "http://simplecart.gatewaymodules.com/success.html" ,
 
                     // URL to redirect browser to after checkout was cancelled by buyer
                     cancel: "http://simplecart.gatewaymodules.com/fail.html" ,
@@ -23,10 +29,14 @@
                     extra_data: {
                         currency_code: "ZAR",
                         m1 : "18c4ae97-0ea1-4fd6-97e8-4041a6f05a01",
-                        m2 : "24ade73c-98cf-47b3-99be-cc7b867b3080",
+                        m2 : sageGUID,
                         p2 : (new Date).getTime(),
-                        p3 : "simpleCart(js) description of goods",
-                        p4 : simpleCart.total                           // Total amount = item1 + item2 + item3 etc                        
+
+                        p3 : customerName + " | " + orderID,
+                        m3 : sageGUID,
+                        m4 : customerID,
+
+                        p4 : simpleCart.total                           // Total amount = item1 + item2 + item3 etc
 
                     }
                 },
@@ -77,7 +87,7 @@
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
 						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
 						<p class="item_Description">product description product description<br/>product description product description</p>
-                    </div>  
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -89,7 +99,7 @@
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
 						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
 						<p class="item_Description">product description product description<br/>product description product description</p>
-                    </div>  
+                    </div>
                 </td>
                 <td>
                     <div class="simpleCart_shelfItem">
@@ -99,7 +109,7 @@
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
 						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
 						<p class="item_Description">product description product description<br/>product description product description</p>
-                    </div>  
+                    </div>
                 </td>
             </tr>
             <tr>
