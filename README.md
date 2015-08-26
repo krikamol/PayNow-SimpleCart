@@ -53,8 +53,10 @@ A. Sage Pay Now Gateway Server Configuration Steps:
 	> http://your_demo_website_simplecart_folder/accept.html
 9. The Decline URL should be:
 	> http://your_demo_website_simplecart_folder/decline.html
+10. The notify URL should be the same as the accept URL.
+11. The redirect URL can just be the home page or any other page where you can notify the user that the payment is pending.
 
-10. It is highly recommended that you "Make test mode active:" while you are still testing your site.
+12. It is highly recommended that you "Make test mode active:" while you are still testing your site.
 
 B. simpleCart Steps:
 
