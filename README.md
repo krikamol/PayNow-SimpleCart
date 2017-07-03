@@ -71,12 +71,6 @@ If you view source for index.html you will notice all the key Sage Pay Now field
 The official technical documentation for simpleCart(js) can be found here:
 https://github.com/wojodesign/simplecart-js
 
-Demo Site
----------
-
-The simpleCart(js) demo site will show you Sage Pay Now in action:
-http://simplecart.gatewaymodules.com
-
 Revision History
 ----------------
 
